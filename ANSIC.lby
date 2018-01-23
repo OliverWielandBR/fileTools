@@ -1,11 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<?AutomationStudio Version=3.0.90.21 SP03?>
-<Library xmlns="http://br-automation.co.at/AS/Library">
+<?AutomationStudio Version=4.3.4.121 SP?>
+<Library Version="1.01.0" Description="Library with file io tools" xmlns="http://br-automation.co.at/AS/Library">
   <Files>
     <File Description="Exportierte Datentypen">fileTools.typ</File>
     <File Description="Exportierte Konstanten">fileTools.var</File>
     <File Description="Exportierte Funktionen und Funktionsblöcke">fileTools.fun</File>
     <File>basename.c</File>
+    <File Description="Gets the file extension">hasExtension.c</File>
     <File Description="Gets the file extension">getfileext.c</File>
   </Files>
 </Library>

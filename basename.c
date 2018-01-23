@@ -8,7 +8,17 @@
  *******************************************************************/
 
 #include <bur/plctypes.h>
-#include <string.h>
+#ifdef __cplusplus
+	extern "C"
+	{
+#endif
+
+#include <string.h>	
+#include "fileTools.h"
+
+#ifdef __cplusplus
+	};
+#endif
 
 char BaseFileName[260];
 

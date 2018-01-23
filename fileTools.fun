@@ -22,3 +22,10 @@ FUNCTION getfileext : UINT (*Gets the file extension*)
 		adrExtention : UDINT;
 	END_VAR
 END_FUNCTION
+
+FUNCTION hasExtension : BOOL
+	VAR_INPUT
+		pFilename : UDINT;
+		pExtension : UDINT;
+	END_VAR
+END_FUNCTION

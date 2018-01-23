@@ -23,27 +23,17 @@
 #endif
 
 /* Gets the file extension */
-unsigned short getfileext(unsigned long adrFileName, unsigned long adrExtention)
+plcbit hasExtension(unsigned long pFilename, unsigned long pExtension)
 {
-	int len;
-	int ii;
-	char *pChar;
-	if ((!adrFileName) || (!adrExtention))
-	{
-		return 50000;
+	char* _Extension[10];
+	
+	getfileext(pFilename, _Extension);
+									
+	if (!strcmp(_Extension, (char *)pExtension))
+	{	
+		return 1;
 	}
 	
-	pChar = (char *)adrFileName;
-	len = strlen(pChar);
+	return 0;
 	
-	for (ii=len-1; ii>=0; ii--)
-	{
-		if (pChar[ii] == '.')
-		{
-			strcpy((char *)adrExtention, &pChar[ii+1]);
-			return 0;
-		}
-	}
-	
-	return 50001;
 }
