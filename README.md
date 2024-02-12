@@ -9,7 +9,7 @@ Returns the file name without the path and file extension.
 Example:
 ```structured
 filename := "path/to/file/myFile.txt";
-result := fileTools.basename(filename);
+result := basename(filename);
 (* Output: "myFile" *)
 ```
 
@@ -19,7 +19,7 @@ Returns the file extension
 Example:
 ```structured
 filename := "myFile.txt";
-result := fileTools.getfileext(filename);
+result := getfileext(filename);
 (* Output: "txt" *)
 ```
 
@@ -30,6 +30,6 @@ Example:
 ```structured
 filename := "myFile.txt";
 extension := "txt";
-result := fileTools.hasExtension(filename, extension);
+result := hasExtension(filename, extension);
 (* Output: TRUE *)
 ```
