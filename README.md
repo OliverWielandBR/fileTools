@@ -8,7 +8,7 @@ Returns the file name without the path and file extension.
 
 Example:
 ```structured
-filename := "path/to/file/myFile.txt";
+filename := 'path/to/file/myFile.txt';
 result := basename(filename);
 (* Output: "myFile" *)
 ```
@@ -18,7 +18,7 @@ Returns the file extension
 
 Example:
 ```structured
-filename := "myFile.txt";
+filename := 'myFile.txt';
 result := getfileext(filename);
 (* Output: "txt" *)
 ```
@@ -28,8 +28,8 @@ Checks if the file name has the specified extension
 
 Example:
 ```structured
-filename := "myFile.txt";
-extension := "txt";
+filename := 'myFile.txt';
+extension := 'txt';
 result := hasExtension(filename, extension);
 (* Output: TRUE *)
 ```
